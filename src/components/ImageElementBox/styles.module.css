@@ -1,0 +1,20 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.img {
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
