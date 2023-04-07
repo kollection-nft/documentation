@@ -4,4 +4,4 @@ label: Links
 ---
 # Useful Links 
 
-123
+- [KCS-2](https://github.com/koinos/koinos-contract-standards/blob/master/KCSs/kcs-2.md)
