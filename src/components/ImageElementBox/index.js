@@ -19,10 +19,10 @@ const FeatureList = [
     src: 'img/customer.png',
     description: (
       <>
-        Learn the basics of NFTs and Kollection, the digital collectibles marketplace at Koinos blockchain.
+        Learn the basics of NFTs and Kollection, the digital collectibles marketplace on Koinos blockchain.
       </>
     ),
-    link: "/docs/users",
+    link: "/docs/learn",
     linktext: "LEARN MORE"
   },
 ];

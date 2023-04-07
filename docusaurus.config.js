@@ -72,17 +72,27 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'developerSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Developers',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            type: 'docSidebar',
+            sidebarId: 'userSidebar',
+            position: 'left',
+            label: 'Learn about Kollection',
+          },
           {
             href: 'https://github.com/kollection-nft',
             label: 'GitHub',
             position: 'right',
           },
-        ],
+          {
+            label: 'Kollection',
+            href: 'https://kollection.app',
+            position: 'right',
+          },
+        ]
       },
       colorMode: {
         defaultMode: 'dark',
@@ -96,8 +106,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Developers',
+                to: '/docs/developers/collection-contract',
+              },
+              {
+                label: 'Learn about Kollection',
+                to: '/docs/learn/intro',
               },
             ],
           },
@@ -118,8 +132,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Kollection',
+                href: 'https://kollection.app',
               },
               {
                 label: 'GitHub',
