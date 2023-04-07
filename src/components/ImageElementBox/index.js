@@ -11,7 +11,7 @@ const FeatureList = [
         You are a developer and want to launch your own NFT collection on Koinos? Perfect. We have the docs! Read and learn.
       </>
     ),
-    link: "/docs/developers",
+    link: "/docs/developers/intro",
     linktext: "LEARN MORE"
   },
   {
@@ -22,7 +22,7 @@ const FeatureList = [
         Learn the basics of NFTs and Kollection, the digital collectibles marketplace on Koinos blockchain.
       </>
     ),
-    link: "/docs/learn",
+    link: "/docs/learn/intro",
     linktext: "LEARN MORE"
   },
 ];
