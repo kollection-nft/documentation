@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Kollection',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'The Digital Asset Marketplace on Koinos',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
