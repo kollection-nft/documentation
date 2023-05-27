@@ -41,15 +41,15 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -107,11 +107,11 @@ const config = {
             items: [
               {
                 label: 'Developers',
-                to: '/docs/developers/collection-contract',
+                to: '/docs/developers/intro',
               },
               {
                 label: 'Learn about Kollection',
-                to: '/docs/learn/intro',
+                to: '/docs/learn/howtouse',
               },
             ],
           },
@@ -137,12 +137,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/kollection-nft',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Kollection.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Kollection Inc.`,
       },
       prism: {
         theme: lightCodeTheme,

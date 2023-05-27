@@ -8,7 +8,7 @@ const FeatureList = [
     src: 'img/dev.png',
     description: (
       <>
-        You are a developer and want to launch your own NFT collection on Koinos? Perfect. We have the docs! Read and learn.
+        You're a developer and want to launch your own NFT collection on Koinos? Perfect. We have the docs! Read and learn.
       </>
     ),
     link: "/docs/developers/intro",
@@ -19,10 +19,10 @@ const FeatureList = [
     src: 'img/customer.png',
     description: (
       <>
-        Learn the basics of NFTs and Kollection, the digital collectibles marketplace on Koinos blockchain.
+        Learn the basics of NFTs and Kollection, the digital collectibles marketplace with no gas fees on the Koinos blockchain.
       </>
     ),
-    link: "/docs/learn/intro",
+    link: "/docs/learn/howtouse",
     linktext: "LEARN MORE"
   },
 ];

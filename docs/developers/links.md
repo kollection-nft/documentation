@@ -6,4 +6,6 @@ label: Links
 
 - [Koinosblocks](https://koinosblocks.com)
 - [KCS-2](https://github.com/koinos/koinos-contract-standards/blob/master/KCSs/kcs-2.md)
+- [Collection-base Contract](https://github.com/kollection-nft/collection-base)
 - [Marketplace Contract](https://github.com/kollection-nft/marketplace)
+- [Koinos CLI](https://github.com/koinos/koinos-cli)

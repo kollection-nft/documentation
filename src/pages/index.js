@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            href="https://kollection-staging.app">
+            href="https://kollection.app">
             LAUNCH KOLLECTION
           </Link>
         </div>
