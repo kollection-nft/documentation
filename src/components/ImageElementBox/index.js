@@ -40,7 +40,7 @@ function Feature({ src, title, description, link, linktext }) {
           className="button button--secondary button--lg"
           to={link}>
           {linktext}
-        </Link>
+        </Link><br></br><br></br>
       </div>
     </div>
   );
