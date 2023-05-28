@@ -25,7 +25,7 @@ We have a form that you can fill out with all of the necessary details. If you'd
 
 #### IMPORTANT!
 
-Contracts can be either immutable or upgradeable on Koinos. If you contract is upgradeable and you upload a new version of your contract, it will automatically be taken down from Kollection and you will need to reach out to us to go through the contract review process again. Your publicly listed code must still match what's actually uploaded to main net Koinos.
+Contracts can be either immutable or upgradeable on Koinos. If your contract is upgradeable and you upload a new version of your contract, it will automatically be taken down from Kollection and you will need to reach out to us to go through the contract review process again. Your publicly listed code must still match what's actually uploaded to main net Koinos.
 
 ## The form to fill out to get your collection listed on Kollection
 
