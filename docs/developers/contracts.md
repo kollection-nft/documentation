@@ -140,7 +140,7 @@ upload collection-base/build/release/contract.asm collection-base/abi/collection
 
 If successful, you will see a message with a transaction ID.
 
-You can now view (and interact with) your uploaded contract on [koinosblocks](https://koinosblocks.com) block explorer by searching for your contract address. If this is a testnet upload, be sure to change the RPC endpoint in the upper right-hand corner to be the harbinger testnet RPC.
+You can now view (and interact with) your uploaded contract on [koinosblocks](https://koinosblocks.com) block explorer by searching for your contract address. If this is a testnet upload, you will be able to see it on the [harbinger testnet version of koinosblocks](https://harbinger.koinosblocks.com).
 
 In addition, if your contract is valid and your metadata and images are available, you should now see your collection listed on the testnet at [kollection-staging.app](https://kollection-staging.app)
 
@@ -148,7 +148,7 @@ In addition, if your contract is valid and your metadata and images are availabl
 
 These instructions are for minting tokens to yourself to list on Kollection. If you're building your own minting page, you would use these same writeable contract features, but, you would call them programatically from your own website. In the future (once "Creator Tools" launches) you will be able to host minting events on Kollection without any code.
 
-From [koinosblocks](https://koinosblocks.com) while viewing your contract's address, click the Connect button in the upper-right hand corner and connect your wallet with either the Kondor or MKW wallet.
+From [koinosblocks](https://koinosblocks.com) (or [testnet koinosblocks](https://harbinger.koinosblocks.com)) while viewing your contract's address, click the Connect button in the upper-right hand corner and connect your wallet with either the Kondor or MKW wallet.
 
 Scroll down the page to see "Writeable Options" and click on the "mint" one.
 
