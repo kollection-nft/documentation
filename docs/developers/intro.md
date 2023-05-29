@@ -15,7 +15,7 @@ Want to launch your collection now? Don't worry! It's all still super easy, and 
 Collections listed on Kollection will need to be whitelisted by us for display. This is primarly for two reasons: 1) Security, and 2) To prevent obvious IP infringement and scams. While we absolutely cannot guarantee that a collection contract is "safe", we simply do this as a basic due dilligence process. As time goes on, this process and it's requirements will become more automated.
 
 ### Requirements
-- A public social media account that we can verify is actually you. Twitter is preferred, but other social media's are also accepted.
+- A public social media account that we can verify is actually you. Twitter is preferred, but other social medias are also accepted.
 - Your NFT collection contract posted publicly to github (or other code hosting site). Your users may also want to see this contract. We will review the contract and the compiled code's sha256 hash and size must match what's actually uploaded to main net Koinos. Using our template for an NFT collection contract is not required, but, it will make the process smoother/faster as it will be easier for us to review your contract.
 - Your contract's main net address.
 - Your collection needs to be tested on the Harbinger Koinos Testnet. Contracts uploaded to testnet do not need to be whitelisted and will show up automatically. The site kollection-staging.app is pointed to the testnet so feel free to use this for testing.
