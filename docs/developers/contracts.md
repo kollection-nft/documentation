@@ -65,7 +65,7 @@ In the directory `collection-base/assembly` you will see a file called `Constant
 
 `OWNER` - this is your owner address. You'll likely want to initially set this to the same public adddress you're using for your contract. The reason this exists is it's possible to transfer ownership of a collection to someone else, and, it also makes it possible for interfaces (like Kollection) to have the owner of a collection verify they are who they say they are for updating things like off-chain metadata (Discord, YouTube, additional images and descriptions, etc). The address will need to be enclosed inside `Base58.decode("");`, example: `Base58.decode("1N2AhqGGticZ8hYmwNPWoroEBvTp3YGsLW");`
 
-`TOKEN_PAY` - this is the contract address for the token that users would use to purchase NFT's for the collection. For testnet, you should set this to `Base58.decode("19JntSm8pSNETT9aHTwAUHC5RMoaSmgZPJ");`, for main net, you would set this to `Base58.decode("15DJN4a8SgrbGhhGksSBASiSYjGnMU8dGL");`
+`TOKEN_PAY` - this is the contract address for the token that users would use to purchase NFT's for the collection. For testnet, you should set this to `Base58.decode("1FaSvLjQJsCJKq5ybmGsMMQs8RQYyVv8ju");`, for main net, you would set this to `Base58.decode("15DJN4a8SgrbGhhGksSBASiSYjGnMU8dGL");`
 
 `ADDRESS_PAY` - Set this to the address that will receive funds after tokens are minted. This could be your owner address, but, it could also be a separate treasury address for your collection.
 
@@ -121,11 +121,13 @@ register governance 19qj51eTbSFJYU7ZagudkpxPgNSzPMfdPX
 However, you'll first want to connect to testnet to upload and test your contract. To do that, swap out your existing `.koinosrc` mainnet file with this one:
 
 ```
-connect https://harbinger-api.koinos.io
-register koin 19JntSm8pSNETT9aHTwAUHC5RMoaSmgZPJ
-register pob 198RuEouhgiiaQm7uGfaXS6jqZr6g6nyoR
-register vhp 1JZqj7dDrK5LzvdJgufYBJNUFo88xBoWC8 
-register name_service 1AM1c73tDNTc24KYqYvSHmoZ2C7oe4DZhh
+connect https://harbinger-api.koinos.io/
+register_token koin 1FaSvLjQJsCJKq5ybmGsMMQs8RQYyVv8ju
+register_token vhp 17n12ktwN79sR6ia9DDgCfmw77EgpbTyBi
+register pob 1MAbK5pYkhp9yHnfhYamC3tfSLmVRTDjd9
+register name_service 13NQnca5chwpKm4ebHbvgvJmXrsSCTayDJ 
+register resources 16X6cKyqiT8EzPEksRJxXcqMnHMMm9Vxct
+register governance 17MjUXDCuTX1p9Kyqy48SQkkPfKScoggo
 ```
 
 With this file in place when you start the Koinos-CLI it will automatically connect to testnet and register the necessary contracts (such as Koin) to interact with.
