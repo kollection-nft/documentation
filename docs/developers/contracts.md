@@ -166,3 +166,13 @@ Congratulations - you have now minted NFT's for your collection to yourself. The
 
 By default, the contract will create the token ID's in numerical order starting with `1`. These are represented by the hex string encoding of the string version of the number - so for example, the token ID for `1` is represented as `0x31`. This is not a requirement for the KCS-2 standard and any valid hex value could be used - however, we recommend using hex strings for ID's. The token ID is also used as part of the path to find your metadata. [Read more about metadata here](metadata).
 
+### Step 6 (optional): configuring royalties
+
+If you'd like to specify a royalty amount and an address for the royalties from each sale to go to, you can do so using the following software and instructions. Currently this isn't supported by the main block explorer (koinosblocks) and is why you'll need to do this instead.
+
+Pull in the royalties-configuration repo from here: [Royalties configuration](https://github.com/kollection-nft/royalties-configuration)
+
+Make a copy of the `config.example.json` and name it `config.json`
+
+Fill in your private key for your contract along with the contract address. The address listed in the royalties object is the one where the royalties will be set. For the amount of royalties, you can use a calculation of x1000. Example: 2.5% would be 2500. Optionally, since this is an array, you can actually specify multiple royalty objects (for royalties to go to more than one account). The maximum amount of royalties that our marketplace contract will accept is 10%.
+
