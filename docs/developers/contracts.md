@@ -176,3 +176,5 @@ Make a copy of the `config.example.json` and name it `config.json`
 
 Fill in your private key for your contract along with the contract address. The address listed in the royalties object is the one where the royalties will be set. For the amount of royalties, you can use a calculation of x1000. Example: 2.5% would be 2500. Optionally, since this is an array, you can actually specify multiple royalty objects (for royalties to go to more than one account). The maximum amount of royalties that our marketplace contract will accept is 10%.
 
+You'll next just need to run `npm install` and `node index.js`. We recommend not keeping private keys (or other secrets) around in your workspace after completing this task.
+
