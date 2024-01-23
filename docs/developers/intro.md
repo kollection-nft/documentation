@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-label: "How to list a collection"
+label: How to list a collection
 ---
 # How to list an NFT collection on Kollection
 
