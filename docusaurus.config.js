@@ -34,16 +34,21 @@ const config = {
 
   presets: [
     [
-      "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
+      //"classic",
+      ///** @type {import('@docusaurus/preset-classic').Options} */
+      "docusaurus-preset-openapi",
+      /** @type {import('docusaurus-preset-openapi').Options} */
       ({
+        api: {
+          path: "openapi_specs/api-v1.yaml",
+          routeBasePath: "/docs/developers/api",
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
           //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          docItemComponent: "@theme/ApiItem"
         },
         blog: {
           showReadingTime: true,
@@ -80,6 +85,7 @@ const config = {
             position: 'left',
             label: 'Developers',
           },
+          { to: "/docs/developers/api", label: "API", position: "left" },
           {
             type: 'docSidebar',
             sidebarId: 'userSidebar',
@@ -157,25 +163,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-  plugins: [
-    [
-      'docusaurus-plugin-openapi-docs',
-      {
-        id: "openapi", // plugin id
-        docsPluginId: "classic", // id of plugin-content-docs or preset for rendering docs
-        config: {
-          apiv1: { // the <id> referenced when running CLI commands
-            specPath: "api-v1.yaml", // path to OpenAPI spec, URLs supported
-            outputDir: "docs/developers/api", // output directory for generated files
-            sidebarOptions: { // optional, instructs plugin to generate sidebar.js
-              groupPathsBy: "tag", // group sidebar items by operation "tag"
-            },
-          }
-        }
-      },
-    ]
-  ],
-  themes: ["docusaurus-theme-openapi-docs"], // export theme components
 };
 
 module.exports = config;
