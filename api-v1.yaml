@@ -1,0 +1,86 @@
+openapi: 3.0.0
+info:
+  description: "This is the Kollection public API. In the interest of helping developers build open, transparent, and connected Web3 experiences on Koinos, we are providing some of our marketplace data free of charge. If you use this data, we do require you to provide attribution to Kollection in your app or on your site. When using this API data, you should link to the Kollection website where it makes sense to do so. Our [brand guidelines](https://github.com/kollection-nft/branding) repository provides images that can be used. API results are cached at the CDN level - results could be up to 60 seconds old at any point in time.Presently there is only one API method available but more could be added in the future."
+  version: 1.0.0
+  title: Kollection Public API
+  termsOfService: https://kollection.app/terms-of-service
+  contact:
+    email: contact@kollection.app
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+tags:
+  - name: account
+    description: Account related requests
+    externalDocs:
+      description: Find out more
+      url: https://docs.kollection.app
+
+paths:
+  /account/{account}/nfts:
+    get:
+      tags:
+        - account
+      summary: Returns an accounts NFTs
+      description: This method queries for all NFTs that are owned by a particular address. It returns basic collection info and some metadata fields.
+      operationId: nfts
+      parameters:
+        - name: account
+          in: path
+          description: Status values that need to be considered for filter
+          required: true
+          explode: true
+          schema:
+            type: string
+     
+      responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/AccountNFTResponse"
+        "400":
+          description: Invalid status value
+
+externalDocs:
+  description: Read more about Kollection in our docs
+  url: https://docs.kollection.app
+servers:
+  - url: https://kollection.app/v1
+components:
+
+  schemas:
+    AccountNFTResponse:
+     type: object
+     properties:
+       data:
+         type: array
+         items:
+           $ref: "#/components/schemas/NFT"
+         description: An array of items from type NFT
+    NFT:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The identifier of this NFT
+        token:
+          type: string
+          format: hex string
+          description: The token in hex string format
+        owner:
+          type: string
+          format: address
+          description: The owner of the NFT
+        minter:
+          type: string
+          format: address
+          description: The address which minted the NFT
+        collection:
+          type: string
+          format: address
+          description: The collection to which this NFT belongs to
+   

@@ -1,8 +1,8 @@
 ---
 sidebar_position: 2
-label: Contracts
+label: "Contracts"
 ---
-# Contracts 
+# Contracts
 
 Contracts on Koinos are standardized through Koinos Contract Standards.
 
@@ -13,10 +13,12 @@ Contracts on Koinos are standardized through Koinos Contract Standards.
 Kollection is powered by a marketplace contract. You won't need to know much about this in order to list your own NFT collection, but, it's probably good to understand the basics. Koinos is a gasless blockchain so there are no transaction fees for any of these actions.
 
 When a user lists an NFT for sale on Kollection, two things happen:
+
 - 1) An order is created on-chain that allows your NFT to be transfered to another owner when they pay the specified price in Koin. This order can be set to expire or be an unlimited timeframe.
 - 2) An authorization is created that allows your NFT to be transferred by the marketplace contract.
 
 When a user buys an NFT that is listed, two things happen:
+
 - 1) The amount of Koin minus a 2.5% marketplace fee and minus royalties set by the collection owner (if any) is transferred to the seller's address.
 - 2) The NFT is transferred to the buyer's address.
 
@@ -41,7 +43,7 @@ To list an NFT collection you will need to create an NFT contract. We have provi
 
 You can do this with the following command:
 
-```
+```shell
 git clone https://github.com/kollection-nft/collection-base
 ```
 
@@ -69,7 +71,7 @@ In the directory `collection-base/assembly` you will see a file called `Constant
 
 `ADDRESS_PAY` - Set this to the address that will receive funds after tokens are minted. This could be your owner address, but, it could also be a separate treasury address for your collection.
 
-#### IMPORTANT!
+#### IMPORTANT
 
 If you intend to mint tokens to yourself and just list them instead of holding a minting event, there are a couple minor things you will need to change in the contract.
 
@@ -83,7 +85,7 @@ On line 187 you will change `System.require(balance.value <= 10, "exceeds the li
 
 In the base `collection-base` directory, type:
 
-```
+```shell
 yarn
 ```
 
@@ -91,7 +93,7 @@ This will have the yarn package manager install any necessary packages under the
 
 Next type:
 
-```
+```shell
 yarn build:release
 ```
 
@@ -107,7 +109,7 @@ Please familiarize yourself with the CLI using the links above. You will want to
 
 The Koinos-CLI will start up and connect to main net automatically by using the provided `.koinosrc` file. If you don't have this, this is the main net `.koinosrc` file:
 
-```
+```shell
 connect https://api.koinos.io/
 register_token koin 15DJN4a8SgrbGhhGksSBASiSYjGnMU8dGL
 register_token vhp 1AdzuXSpC6K9qtXdCBgD5NUpDNwHjMgrc9
@@ -120,7 +122,7 @@ register governance 19qj51eTbSFJYU7ZagudkpxPgNSzPMfdPX
 
 However, you'll first want to connect to testnet to upload and test your contract. To do that, swap out your existing `.koinosrc` mainnet file with this one:
 
-```
+```shell
 connect https://harbinger-api.koinos.io/
 register_token koin 1FaSvLjQJsCJKq5ybmGsMMQs8RQYyVv8ju
 register_token vhp 17n12ktwN79sR6ia9DDgCfmw77EgpbTyBi
@@ -136,7 +138,7 @@ You will need a little bit of `tKOIN` so that you have Mana to upload your contr
 
 With your wallet open / unlocked in the CLI, you would use the following command to upload. Be sure to replace the file path to match where your `contract.wasm` and `collections.abi` files are actually located.
 
-```
+```shell
 upload collection-base/build/release/contract.asm collection-base/abi/collections.abi
 ```
 
@@ -177,4 +179,3 @@ Make a copy of the `config.example.json` and name it `config.json`
 Fill in your private key for your contract along with the contract address. The address listed in the royalties object is the one where the royalties will be set. For the amount of royalties, you can use a calculation of x1000. Example: 2.5% would be 2500. Optionally, since this is an array, you can actually specify multiple royalty objects (for royalties to go to more than one account). The maximum amount of royalties that our marketplace contract will accept is 10%.
 
 You'll next just need to run `npm install` and `node index.js`. We recommend not keeping private keys (or other secrets) around in your workspace after completing this task.
-
