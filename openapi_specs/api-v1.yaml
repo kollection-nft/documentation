@@ -27,9 +27,8 @@ paths:
       parameters:
         - name: account
           in: path
-          description: Status values that need to be considered for filter
+          description: The required account address
           required: true
-          explode: true
           schema:
             type: string
      
