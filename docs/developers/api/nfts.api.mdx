@@ -1,0 +1,54 @@
+---
+id: nfts
+title: "Returns NFTs of an account"
+description: "This method queries for all NFTs that are owned by a particular address. It returns basic collection info and some metadata fields."
+sidebar_label: "Returns NFTs of an account"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVk1vGzcQ/SuDPSWArFXSpgehKGqkbiG4dQw7RQ6GD9TurJYRl9yQXMmCoP/eN9yVJUeuD+6lF1tLDufjzZtHbrOoFiGb3mWqKFxnY3Y/ykoOhddt1M5m0+xzrQM1HGtX0reOveZAlfOkjKGr3z8HirWKpDyTW1suab4hRa3yURedUbArS88hjGkWyXPsvA00V0EXVDhjuJAwpG3lSNmSgmtYoqlSRUWVZlOGcTbKXMteiemsRE62igGLiKJgy14q2GYWH9jcVzLKtOTfqlhn3xd1G1XsAq2U6XiowDKSj47mjMRs0CV7LEillTaIAR+ev3Uaq9k0+o5HGT+0xpW8/wxFzY3KptssblrJJESv7SLb7e7lbGjhloPsv59M5N/TnEJXFACq6gw9VougSCYyyoG9aluji7SRfw1yaHsaVHmvNlJ85CYcrbv5V4AtqHlxH3WfiuD8+tO6PC33lEBMQNNGjXZ6chXwBqXAnWw3yqJbsn3OCZBvFMrOan6gF1wnByAQHexoOAv3wkn/ovuBn8/6Tqf7jHmfcKNt/A8uhz1a17qoKTkrj90fhuLVIY7mCnzuA+0hB72Nswtw3oGXgF9HIxGG6E+dnVtKfBAEEiGo8q4hSapP98jBeT91WL4ZmI7tnVj8OPlwSva/ekGxLoqQuDWGCqYfnpuLmeBtlaHAfoV2sPfOp9i9KsFkwYmaMunTLB8EIN8OP3b5oBe9g14sOm+EWzG2YZrny0fIxhiyfPUuk5kVVTrNJwmiDqlplweo226O4aTz6xmkzqbdxBQOUfCr2bRCzZJX6ABGCCrYaVPKrNsRRa9sgJ5hTEZJCDH2Fp5Bji88/4EgNSK9FgpBCHbptHVhRGtOyouhXOlS3Cf9RDjXeWqUX3JsjSqYejn1nDaLWvkFj+nnuaf8l1lFG9dRF7hniZgmz6WjQfGSAbjUx0HMCELOuz3FLo+FXGyh+m1LkE43fAbQZ0xfakxqFyTPFAlYDdHEf6hdBzyMtktx+h28a56LE9AZkIKNqG4JLAJbydtJssGN6ROC3c29ILjokCq8cbh/s+/zQse6m48L1xy1/Az0yNMZZPYWNbcOoZzf7OtFuxu12F8UhbJySQCvctwj2P+VatDtzsSQmlIoSHMJrFIpH3+7IiO9p7NHqyIVLL5aKeGnCcpB30u02KSDyiIHtDoKrlE3/CTgNfyAL2YjAQQUoQa+nOUE7XBpq5XSRs0Ng3CAzUlq+8CQEaSoe7pWHW5nlttWpqQn+7vxZDzJDmN+1JHrR8LLPvsmfKpuMWG64H+frGR35qqzMFj2F5wq0gWHm0zLWA5Lvz49LAqBiNJxMR6u+/NWcKb3Kc3DVCP0er3GMdkdO7/Ih6Mh/3P28eLq9uIMR8Z1bEzSEvQ8NsoeOb4ZHivpkYOpQdsPT4snkrA9XNL/k+fScG9Efog5BAAPod0AznaQybujd9L08DMpJaSvBhxitN0iOP/tzW4ny1LRBuv4uVJeC6uSmpY6yG9ocaVM4BfweXMzPKLe0useYc+Wtn+9WHm7JIf4ws8lb45ehLt7mNasSrm/kXW/i5uL23h07uSZJXfB413zx4VcfP8ACDfnjQ==
+sidebar_class_name: "get api-method"
+info_path: docs/developers/api/kollection-public-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Returns NFTs of an account</h1>
+
+<MethodEndpoint method={"get"} path={"/account/{account}/nfts"}></MethodEndpoint>
+
+
+
+This method queries for all NFTs that are owned by a particular address. It returns basic collection info and some metadata fields.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"account","in":"path","description":"Status values that need to be considered for filter","required":true,"explode":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+successful operation
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><span className={"openapi-schema__container"}><strong className={"openapi-schema__property"}>data</strong><span className={"openapi-schema__name"}> object[]</span></span></summary><div style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+An array of items from type NFT
+
+</div><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"id"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string","description":"The identifier of this NFT"}}></SchemaItem><SchemaItem collapsible={false} name={"token"} required={false} schemaName={"hex string"} qualifierMessage={undefined} schema={{"type":"string","format":"hex string","description":"The token in hex string format"}}></SchemaItem><SchemaItem collapsible={false} name={"owner"} required={false} schemaName={"address"} qualifierMessage={undefined} schema={{"type":"string","format":"address","description":"The owner of the NFT"}}></SchemaItem><SchemaItem collapsible={false} name={"minter"} required={false} schemaName={"address"} qualifierMessage={undefined} schema={{"type":"string","format":"address","description":"The address which minted the NFT"}}></SchemaItem><SchemaItem collapsible={false} name={"collection"} required={false} schemaName={"address"} qualifierMessage={undefined} schema={{"type":"string","format":"address","description":"The collection to which this NFT belongs to"}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></div></details></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"[\n  {\n    \"data\": [\n      {\n        \"id\": \"string\",\n        \"token\": \"string\",\n        \"owner\": \"string\",\n        \"minter\": \"string\",\n        \"collection\": \"string\"\n      }\n    ]\n  }\n]"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"405"} value={"405"}><div>
+
+Method not allowed
+
+</div><div></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+Internal server error
+
+</div><div></div></TabItem></ApiTabs></div></div>
+      

@@ -1,0 +1,1 @@
+module.exports = [{"type":"doc","id":"developers/api/kollection-public-api"},{"type":"category","label":"account","items":[{"type":"doc","id":"developers/api/nfts","label":"Returns NFTs of an account","className":"api-method get"}]}];

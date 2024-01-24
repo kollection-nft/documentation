@@ -42,8 +42,10 @@ paths:
                 type: array
                 items:
                   $ref: "#/components/schemas/AccountNFTResponse"
-        "400":
-          description: Invalid status value
+        "405":
+          description: Method not allowed
+        "500":
+          description: Internal server error
 
 externalDocs:
   description: Read more about Kollection in our docs

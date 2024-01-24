@@ -22,7 +22,7 @@ const FeatureList = [
         Discover the Kollection public API.
       </>
     ),
-    link: "/docs/developers/api",
+    link: "/docs/developers/api/kollection-public-api",
     linktext: "API"
   },
   {
