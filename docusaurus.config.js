@@ -34,15 +34,23 @@ const config = {
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
+      // "docusaurus-preset-openapi",
+      // /** @type {import('docusaurus-preset-openapi').Options} */
       ({
+        // api: {
+        //   path: "openapi_specs/api-v1.yaml",
+        //   routeBasePath: "/docs/developers/api",
+        // },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
           //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          docLayoutComponent: "@theme/DocPage",
+          docItemComponent: "@theme/ApiItem" // Derived from docusaurus-theme-openapi-docs
         },
         blog: {
           showReadingTime: true,
@@ -56,11 +64,13 @@ const config = {
         },
       }),
     ],
+
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+
       // Replace with your project's social card
       image: 'img/kollection_open_graph_image.png',
       navbar: {
@@ -153,6 +163,26 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: [
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: "Api", // plugin id
+        docsPluginId: "classic", // id of plugin-content-docs or preset for rendering docs
+        config: {
+          kollection: { // the <id> referenced when running CLI commands
+            version: "1",
+            specPath: "openapi_specs/api-v1.yaml", // path to OpenAPI spec, URLs supported
+            outputDir: "docs/developers/api", // output directory for generated files
+            sidebarOptions: { // optional, instructs plugin to generate sidebar.js
+              groupPathsBy: "tag", // group sidebar items by operation "tag"
+            },
+          },
+        }
+      },
+    ]
+  ],
+  themes: ["docusaurus-theme-openapi-docs"], // export theme components
 };
 
 module.exports = config;

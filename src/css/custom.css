@@ -28,3 +28,7 @@
   --ifm-color-primary-lightest: #bbff4d;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.badge--primary, button.openapi-explorer__request-btn {
+  color: black;
+}

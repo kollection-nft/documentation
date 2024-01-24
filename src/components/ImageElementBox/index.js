@@ -8,18 +8,29 @@ const FeatureList = [
     src: 'img/dev.png',
     description: (
       <>
-        You're a developer and want to launch your own NFT collection on Koinos? Perfect. We have the docs! Read and learn.
+        Launch your own NFT collection on Koinos. Read and learn.
       </>
     ),
     link: "/docs/developers/intro",
     linktext: "LEARN MORE"
   },
   {
+    title: 'API Docs',
+    src: 'img/kollection-api.png',
+    description: (
+      <>
+        Discover the Kollection public API.
+      </>
+    ),
+    link: "/docs/developers/api/kollection-public-api",
+    linktext: "API"
+  },
+  {
     title: 'User Docs',
     src: 'img/customer.png',
     description: (
       <>
-        Learn the basics of NFTs and Kollection, the digital collectibles marketplace with no gas fees on the Koinos blockchain.
+        Learn the basics of NFTs and Kollection!
       </>
     ),
     link: "/docs/learn/howtouse",
@@ -29,7 +40,7 @@ const FeatureList = [
 
 function Feature({ src, title, description, link, linktext }) {
   return (
-    <div className={clsx('col col--6')}>
+    <div className={clsx('col col--4')}>
       <div className="text--center">
         <img className={styles.img} role="img" src={src} />
       </div>
@@ -40,7 +51,7 @@ function Feature({ src, title, description, link, linktext }) {
           className="button button--secondary button--lg"
           to={link}>
           {linktext}
-        </Link><br></br><br></br>
+        </Link>
       </div>
     </div>
   );
@@ -50,7 +61,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row flex-between">
+        <div className="row flex-between" style={{justifyContent: "center", margin: "20px 0"}}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

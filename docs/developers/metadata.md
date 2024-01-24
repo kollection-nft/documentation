@@ -4,17 +4,17 @@ label: Metadata
 ---
 # Metadata
 
-### Intro
+## Intro
 
 Metadata is the data that describes each individual NFT in your collection. This includes a description, attributes, an image URL, and any other things that may be used to describe your NFTs. It's important to note that this metadata can be extended to include any other data that you may want and it's not restricted just to these parameters. For example, if you are developing a game that utilizes different properties for items in your game, it would be entirely acceptable to use additional fields to describe these items.
 
 For ease of use and interoperability, Kollection follows the [OpenSea Metadata Standard](https://docs.opensea.io/docs/metadata-standards) that is used for ERC-721 NFT collections. There are many tools available for generating this type of metadata that will also work here with the KCS-2 token standard on Koinos.
 
-### Example metadata
+## Example metadata
 
 The metadata is stored and served as a JSON file. Below is an example JSON metadata file for an NFT in the OG-Rex collection.
 
-```
+```shell
 {
    "name":"OG-Rex #1",
    "description":"OG-Rex",
@@ -64,6 +64,6 @@ You are free to use any additional fields described in the standard (and even on
 
 The metadata for an individual token (NFT) is expected to be found at a path that is built from your base URI set in your collection along with the token's ID. For exmaple, if your URI is set to `https://ogrex.io/api/rex`, and the first token is the hex string representation of `1` which is `0x31`, the metadata for this token should be found at `https://ogrex.io/api/rex/0x31`.
 
-#### IMPORTANT!
+#### IMPORTANT
 
 Please note that the path should be exactly `URI/tokenId`, there should not be a `.json` extension at the end. Your web hosting provider (or IPFS gateway) should serve this file with a `content-type` of `application/json`. Most web servers and IPFS gateways will automatically do this for you.
