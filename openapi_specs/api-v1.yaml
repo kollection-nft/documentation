@@ -17,7 +17,7 @@ tags:
       url: https://docs.kollection.app
 
 paths:
-  /account/{account}/nfts:
+  /nfts_by_owner/{account}:
     get:
       tags:
         - account
