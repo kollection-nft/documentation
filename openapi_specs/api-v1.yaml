@@ -50,7 +50,7 @@ externalDocs:
   description: Read more about Kollection in our docs
   url: https://docs.kollection.app
 servers:
-  - url: https://kollection.app/v1
+  - url: https://kollection.app/api/v1
 components:
 
   schemas:
