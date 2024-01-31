@@ -32,3 +32,5 @@ description: The terminology explained
 **Off-chain metadata**: Additional information about an NFT that is stored off-chain, sometimes via IPFS and other times on a centralized server.
 
 **Immutable**: Smart contracts on the blockchain that are designed to be unchangeable once deployed. They ensure that the terms of the contract cannot be altered after the fact, providing security and transparency for all parties involved in a transaction. In the context of NFTs, immutable contracts are used to enforce ownership and transfer of the digital asset.
+
+**Drops**: A NFT collection that will be minted on Kollection in the near future. Take a look at the [Drops page](drops.md) for more information.
