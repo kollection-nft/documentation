@@ -58,7 +58,9 @@ Description of fields:
 
 `image` - the URL where the image for this NFT is located. This can be either an `https` or `ipfs` link.
 
-You are free to use any additional fields described in the standard (and even ones that are not). The minimum required fields for a collection to be listed on Kollection are `name`, `description`, and `image`. As Kollection is in active development we will eventually expand to use additional metadata fields.
+`animation_url` - Kollection uses this metadata field to check for .glb files if you want to display 3D objects.
+
+You are free to use any additional fields described in the standard (and even ones that are not). The minimum required fields for a collection to be listed on Kollection are `name`, `description`, and `image`. As Kollection is in active development we will eventually expand to use additional metadata fields. Collections with 3D objects should not only contain the `animation_url`, but also a static rendered `image`.
 
 ### Linking to your collection
 
