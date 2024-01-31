@@ -7,7 +7,7 @@ label: Drops
 ## Overview
 
 The Drops feature on Kollection is the first release of the Creator Tools suite.
-Drops are a great way to launch your collection on Koinos. This feature eleminates the need to have a separate minting page, and also acts as marketing tool for your project. Mint on Kollection and get the maximum exposure in the NFT space of the Koinos blockchain.
+Drops are a great way to launch your collection on Koinos. This feature eliminates the need to have a separate minting page, and also acts as marketing tool for your project. Mint on Kollection and get the maximum exposure in the NFT space of the Koinos blockchain.
 
 ![Kollection Drop Page Preview](/img/drops/kollection-drop-page.webp)
 
@@ -15,9 +15,9 @@ Drops are a great way to launch your collection on Koinos. This feature eleminat
 
 ### Featured on the Website
 
-- Upcoming NFT collections featured in the drop program are displayed in a slider on the Kollection homepage.
+- Upcoming NFT collections featured in the drop program are displayed in a carousel on the Kollection homepage.
 - The collection will also be visible in the drop overview page.
-- Collections will be listed under Minting Live & Upcoming for up to 7days after the minting has started.
+- Collections will be listed under Minting Live & Upcoming for up to 7 days after the minting has started.
 
 ### Customized Minting Page
 
