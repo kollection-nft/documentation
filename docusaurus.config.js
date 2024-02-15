@@ -143,7 +143,7 @@ const config = {
             items: [
               {
                 label: 'Listing Form',
-                href: 'https://forms.gle/Emx568Z1GMjPwC2Q8',
+                href: 'https://forms.gle/qL72xLFYoWDtR7gj6',
               },
               {
                 label: 'Kollection',
