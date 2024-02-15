@@ -30,7 +30,7 @@ Contracts can be either immutable or upgradeable on Koinos. If your contract is 
 
 ## The form to fill out to get your collection listed on Kollection
 
-As we develop the "Creator Tools" suite we will eventually move these questions to the site itself - you will be able to manage it by using the owner keys for your collection. Until then, here's a google form that you can fill out: [link to form](https://forms.gle/Emx568Z1GMjPwC2Q8). Be sure to fill out the necessary requirements (outlined above). If for some reason you can't use a google form, you are also welcome to contact us at [contact@kollection.app](mailto:contact@kollection.app)
+As we develop the "Creator Tools" suite we will eventually move these questions to the site itself - you will be able to manage it by using the owner keys for your collection. Until then, here's a google form that you can fill out: [link to form](https://forms.gle/qL72xLFYoWDtR7gj6). Be sure to fill out the necessary requirements (outlined above). If for some reason you can't use a google form, you are also welcome to contact us at [contact@kollection.app](mailto:contact@kollection.app)
 
 ## Minting events
 
