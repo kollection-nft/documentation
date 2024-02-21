@@ -53,4 +53,4 @@ Each collection's minting page includes several customizable features:
 
 Collections interested in being featured in "Drops" should apply through the Kollection Drop Application Form.
 
-**Application Link:** [Kollection Drop Application Form](https://docs.google.com/forms/d/1oNh2Sod7ae-THEM3Pgdr039V2ZtbmV1iJs5GuIWULOE/edit)
+**Application Link:** [Kollection Drop Application Form](https://forms.gle/qL72xLFYoWDtR7gj6)
